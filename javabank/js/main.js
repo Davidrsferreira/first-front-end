@@ -9,7 +9,6 @@ window.onload = function () {
         // IE 6 and older
         ajax = new ActiveXObject('Microsoft.XMLHTTP');
     }
-
     // run this when the ajax request completes
     ajax.onreadystatechange = function () {
         if (ajax.readyState === 4 && ajax.status === 200) {
@@ -18,7 +17,7 @@ window.onload = function () {
     };
 
     // start the AJAX request
-    ajax.open('GET', 'http://localhost:8080/api/customer', true);
+    ajax.open('GET', 'http:/localhost:8080/javabank/api/customer/', true);
     ajax.setRequestHeader('Content-type', 'application/json');
     ajax.send();
 }
@@ -44,8 +43,8 @@ window.onload = function () {
     }
 
 }
-*/
 
 var helloWorldFn = function () {
     alert("hello world!");
-};
+};*/
+
