@@ -2,37 +2,74 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>Javabank</title>
 
-  <link rel="apple-touch-icon" href="icon.png">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fafafa">
 
-  <link rel="stylesheet" 
-        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
-        crossorigin="anonymous"
-  >
+    <title>Javabank</title>
 
-  <meta name="theme-color" content="#fafafa">
+    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/main.js"></script>
 
 </head>
 
 <body>
-  <table class="table table-striped table-dark" id="users-table">
-    <tr>
-      <th>First Name</th>
-      <th>Last Name</th>
-      <th>Email</th>
-      <th>Phone</th>
-      <th>Edit</th>
-      <th>Delete</th>
-    </tr>
-  </table>
+    <div class="container">
+        <div>
+            <h1>JavaBank</h1>
+        </div>
+        <div><br></div>
+        <div>
+            <h3>Customer management</h3>
+        </div>
+        <form action="" method="post" class="form">
+            <div class="form-row">
+                <div class="form-group col-md-3">
+                    <label for="fname">first name</label>
+                    <input type="text" class="form-control" id="fname">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="lname">first name</label>
+                    <input type="text" class="form-control" id="lname">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email@email.com">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="phone">Phone</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="123456789">
+                </div>
+            </div>
+            <div>
+                <button type="submit" class="btn btn-success">Add</button>
+                <button type="submit" class="btn btn-primary">Edit</button>
+                <button type="submit" class="btn btn-warning">Reset</button>
+            </div>
+        </form>
+
+        <div><br><br><br><br></div>
+
+        <div>
+            <h3>Customer list</h3>
+        </div>
+        <table class="table table-striped" id="users-table">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+        </table>
+    </div>
 </body>
 
 </html>

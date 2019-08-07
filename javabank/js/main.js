@@ -27,7 +27,7 @@ function populateTable(response) {
         element += '<tr>';
 
         for (var j = 0; j < response.length; j++){
-            element += '<td>' + Object.values(response) + '</td>';
+            element += '<td>' + Object.values(response[i])[j] + '</td>';
         }
 
         element += '<td><button type="button" onclick="helloWorldFn()" class="btn btn-primary">Edit</button></td>';
